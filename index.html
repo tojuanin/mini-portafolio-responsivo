@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Hola bienvenid@ a mi Mini Portafolio Profesional, soy Juan Polvo Morales, Desarrollador Web">
+  <link rel="canonical" href="https://tojuanin.github.io/responsive-mini-portafolio">
+  <meta name="theme-color" content="#5479F9">
+  <meta name="twitter:card" content="summary">
+  <meta property="og:type" content="website">
+  <meta property="og:title" name="twitter:title" content=" Mini Portafolio Profesional - Juan Polvo Morales">
+  <meta property="og:description" name="twitter:description"
+    content="Hola bienvenid@ a mi Mini Portafolio Profesional, soy Juan Polvo Morales, Desarrollador Web">
+  <meta property="og:image" name="twitter:image"
+    content="https:/tojuanin.github.io/responsive-mini-portafolio/assets/perfil.jpg">
+  <meta property="og:url" name="twitter:url" content="https:/tojuanin.github.io/responsive-mini-portafolio">
+
+  <!--=============== FAVICON ===============-->
+  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+  <link rel="favicon" href="https:/tojuanin.github.io/responsive-mini-portafolio/assets/favicon.png">
+  <link rel="apple-touch-icon" href="https:/tojuanin.github.io/responsive-mini-portafolio/assets/favicon.png">
+
+  <!--=============== BOXICONS ===============-->
+  <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css'>
+
+  <!--=============== CSS ===============-->
+  <link rel='stylesheet' href='assets/css/styles.css'>
+
+  <title>Mini Portafolio Profesional - Juan Polvo Morales</title>
+</head>
+
+<body>
+  <!--=============== HEADER PROFILE ===============-->
+  <header class="profile container">
+    <!-- Theme button -->
+    <i class='bx bx-moon change-theme' id="theme-button"></i>
+
+    <div class="profile__container grid">
+      <div class="profile__data">
+        <div class="profile__border">
+          <div class="profile__perfil">
+            <!-- Insert your image, according to the example size of the portfolio -->
+            <img src="assets/img/perfil.png" alt="">
+          </div>
+        </div>
+
+        <h2 class="profile__name">Juan Polvo Morales</h2>
+        <h3 class="profile__profession">Web developer</h3>
+
+        <ul class="profile__social">
+          <a href="https://www.instagram.com/" target="_blank" class="profile__social-link">
+            <i class='bx bxl-instagram'></i>
+          </a>
+          <a href="https://www.linkedin.com/" target="_blank" class="profile__social-link">
+            <i class='bx bxl-linkedin'></i>
+          </a>
+          <a href="https://github.com/" target="_blank" class="profile__social-link">
+            <i class="ri-github-line"></i>
+            <i class='bx bxl-github'></i>
+          </a>
+        </ul>
+      </div>
+
+      <div class="profile__info grid">
+        <div class="profile__info-group">
+          <h3 class="profile__info-number">+5</h3>
+          <p class="profile__info-description">
+            Años de <br> experiencia
+          </p>
+        </div>
+        <div class="profile__info-group">
+          <h3 class="profile__info-number">+5</h3>
+          <p class="profile__info-description">
+            Proyectos <br> completados
+          </p>
+        </div>
+        <div class="profile__info-group">
+          <h3 class="profile__info-number">+5</h3>
+          <p class="profile__info-description">Clientes <br> satisfechos</p>
+        </div>
+      </div>
+
+      <div class="profile__buttons">
+        <!-- Insert your CV -->
+        <a download="" href="assets/pdf/Juan-Cv.pdf" class="button">
+          Descargar CV <i class='bx bx-download'></i>
+        </a>
+
+        <div class="profile__buttons-small">
+          <!-- Insert a real number plus country code -->
+          <a href="https://api.whatsapp.com/send?phone=522462145440&text=Hola, mas información!" target="_blank"
+            class="button button__small button__gray">
+            <i class='bx bxl-whatsapp'></i>
+          </a>
+          <!-- Insert your brand name or profile -->
+          <a href="https://m.me/jose.moralez.58118" target="_blank" class="button button__small button__gray">
+            <i class='bx bxl-messenger'></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!--=============== MAIN ===============-->
+  <main class="main">
+    <section class="filters container">
+      <!--=============== FILTERS TABS ===============-->
+      <ul class="filters__content">
+        <button class="filters__button filter-tab-active" data-target="#projects">
+          Proyectos
+        </button>
+        <button class="filters__button" data-target="#skills">
+          Habilidades
+        </button>
+      </ul>
+
+      <div class="filters__sections">
+        <!--=============== PROJECTS ===============-->
+        <div class="projects__content grid filters__active" data-content id="projects">
+          <article class="projects__card">
+            <!-- Insert your image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
+            <img src="assets/img/project1.jpg" alt="" class="projects__img">
+
+            <div class="projects__modal">
+              <div>
+                <span class="projects__subtitle">Web</span>
+                <h3 class="projects__title">Sitio de Noticias</h3>
+                <a href="http://escenainformativa.com/" class="projects__button button button__small">
+                  <i class='bx bx-link'></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="projects__card">
+            <img src="assets/img/project2.jpg" alt="" class="projects__img">
+
+            <div class="projects__modal">
+              <div>
+                <span class="projects__subtitle">Web</span>
+                <h3 class="projects__title">Portafolio CV</h3>
+                <a href="https://tojuanin.github.io/tojuanin-website/" class="projects__button button button__small">
+                  <i class='bx bx-link'></i>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!--=============== SKILLS ===============-->
+        <div class="skills__content grid" data-content id="skills">
+          <div class="skills__area">
+            <h3 class="skills__title">Frontend Developer</h3>
+
+            <div class="skills__box">
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i class='bx bx-check-circle'></i>
+
+                  <div>
+                    <h3 class="skills__name">HTML</h3>
+                    <span class="skills__level">Intermedio</span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i class='bx bx-check-circle'></i>
+
+                  <div>
+                    <h3 class="skills__name">CSS</h3>
+                    <span class="skills__level">Intermedio</span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i class='bx bx-check-circle'></i>
+
+                  <div>
+                    <h3 class="skills__name">JavaScript</h3>
+                    <span class="skills__level">Intermedio</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i class='bx bx-check-circle'></i>
+
+                  <div>
+                    <h3 class="skills__name">React</h3>
+                    <span class="skills__level">Intermedio</span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i class='bx bx-check-circle'></i>
+
+                  <div>
+                    <h3 class="skills__name">Bootstrap</h3>
+                    <span class="skills__level">Intermedio</span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i class='bx bx-check-circle'></i>
+
+                  <div>
+                    <h3 class="skills__name">Git</h3>
+                    <span class="skills__level">Básico</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills__area">
+            <h3 class="skills__title">Backend Developer</h3>
+
+            <div class="skills__box">
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i class='bx bx-check-circle'></i>
+
+                  <div>
+                    <h3 class="skills__name">PHP</h3>
+                    <span class="skills__level">Intermedio</span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i class='bx bx-check-circle'></i>
+
+                  <div>
+                    <h3 class="skills__name">MySQL</h3>
+                    <span class="skills__level">Intermedio</span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i class='bx bx-check-circle'></i>
+
+                  <div>
+                    <h3 class="skills__name">Firebase</h3>
+                    <span class="skills__level">Básico</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i class='bx bx-check-circle'></i>
+
+                  <div>
+                    <h3 class="skills__name">Python</h3>
+                    <span class="skills__level">Básico</span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i class='bx bx-check-circle'></i>
+
+                  <div>
+                    <h3 class="skills__name">Node Js</h3>
+                    <span class="skills__level">Intermedio</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!--=============== FOOTER ===============-->
+  <footer class="footer container">
+    <span class="footer__copy">
+      &#169; Juan Polvo Morales. Todos los derechos reservados
+    </span>
+  </footer>
+
+  <!--=============== SCROLLREVEAL ===============-->
+  <script src="assets/js/scrollreveal.min.js"></script>
+
+  <!--=============== MAIN JS ===============-->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
